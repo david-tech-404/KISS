@@ -46,23 +46,18 @@
         android:visibility="gone"
         tools:visibility="visible">
 
-        <fr.neamar.kiss.ui.AnimatedListView
+        <GridView
             android:id="@android:id/list"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_gravity="top|center_horizontal"
             android:cacheColorHint="@android:color/transparent"
-            android:divider="?attr/dividerDrawable"
-            android:dividerHeight="1dp"
-            android:stackFromBottom="true"
-            android:transcriptMode="alwaysScroll"
+            android:numColumns="4"
+            android:verticalSpacing="12dp"
+            android:horizontalSpacing="8dp"
+            android:stretchMode="columnWidth"
+            android:gravity="center"
             tools:listitem="@layout/item_app" />
-
-        <fr.neamar.kiss.ui.BottomPullEffectView
-            android:id="@+id/listEdgeEffect"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_gravity="center_horizontal|bottom" />
 
     </FrameLayout>
 
@@ -71,6 +66,7 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/favorite_height"
         android:layout_above="@id/searchEditLayout"
+		android:visibility="gone"
         android:layout_marginStart="10dp"
         android:layout_marginLeft="10dp"
         android:layout_marginEnd="10dp"
