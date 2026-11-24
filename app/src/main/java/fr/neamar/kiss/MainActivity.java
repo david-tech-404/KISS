@@ -54,7 +54,7 @@ import fr.neamar.kiss.searcher.QueryInterface;
 import fr.neamar.kiss.searcher.SearchHandler;
 import fr.neamar.kiss.searcher.Searcher;
 import fr.neamar.kiss.settings.SettingsFragment;
-import fr.neamar.kiss.ui.AnimatedListView;
+import android.widget.GridView;
 import fr.neamar.kiss.ui.KeyboardScrollHider;
 import fr.neamar.kiss.ui.ListPopup;
 import fr.neamar.kiss.ui.SearchEditText;
@@ -90,7 +90,7 @@ public class MainActivity extends AppCompatActivity implements QueryInterface, K
     /**
      * Main list view
      */
-    public AnimatedListView list;
+    public GridView list;
     public View listContainer;
     /**
      * View to display when list is empty
